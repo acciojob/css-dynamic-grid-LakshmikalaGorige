@@ -1,22 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout with CSS</title>
+    <style>
+        /* Add CSS for the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 10px; /* Gap between grid items */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
 
-  </head>
-
-  <body>
-    <!-- the entire body must be written by student -->
-    
-		<div class="grid-container">
-			
-				<div class="grid-item">1</div>
-                <div class="grid-item">2</div>
-                <div class="grid-item">3</div>
-                <div class="grid-item">4</div>
-                <div class="grid-item">5</div>
-                <div class="grid-item">6</div>
-                <div class="grid-item">7</div>
-                <div class="grid-item">8</div>
-                <div class="grid-item">9</div>
-	
-		</div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+        /* Add CSS for the grid items */
+        .grid-item {
+            background-color: lightgray;
+            height: 150px;
+            width: 200px;
+            border-radius: 5px;
+            font-size: 40px;
+            display: flex; /* Enable flex properties for content alignment */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Grid Items -->
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <!-- Add more grid items as needed -->
+    </div>
+</body>
 </html>
